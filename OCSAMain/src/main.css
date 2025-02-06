@@ -1,0 +1,40 @@
+@import "../node_modules/bootstrap/dist/css/bootstrap-grid.min.css";
+
+html, body {
+    background-color: #f5f5f5;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.brand {
+    padding-left: 20px;
+}
+
+.banner {
+    color: #E4BD1F;
+    font-family: Montserrat;
+}
+
+
+/* Positioning + styling for menu button + icon */
+.drawer-button-custom {
+    background: none;
+    border: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .drawer-button-custom {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .drawer-button-custom {
+        margin-right: 20px; 
+    }
+}

@@ -6,12 +6,23 @@ html, body {
     overflow-x: hidden;
 }
 
+/* Footer styling */
+.nav .text-body-secondary {
+    text-decoration: none;
+}
+
+.nav .text-body-secondary:hover, .nav .text-body-secondary:active {
+    color: rgb(14, 14, 44) !important;
+    text-decoration: underline;
+}
+
+/* Carousel styling */
 .carousel-top-level {
     margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    height: 100vh;
+    height: 450;
 }
 
 .carousel-container {

@@ -6,6 +6,63 @@ html, body {
     overflow-x: hidden;
 }
 
+.carousel-top-level {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 5px auto;
+    height: 400px;
+    background-color: #c3c9cf;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.carousel-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-container .carousel-header {
+    position: absolute;
+    bottom: 75px;
+    left: 20px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 255);
+}
+
+.carousel-container .carousel-description {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right:20px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 255);
+}
+
+.carousel-button.next-button {
+    position: absolute;
+    border: none;
+    background: none;
+    right: 0;
+}
+
+.carousel-button.last-button {
+    position: absolute;
+    border: none;
+    background: none;
+    left: 0;
+}
+
+/* navbar component styles */
 #menubar-custom {
     padding: 0;
 }

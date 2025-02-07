@@ -6,15 +6,53 @@ html, body {
     overflow-x: hidden;
 }
 
+#menubar-custom {
+    padding: 0;
+}
+
+
+/* .nav-object-wrapper {
+    background-color: #b57b3e !important;
+    border: 10px solid #962E1E;
+} */
+
+
 .brand {
     padding-left: 20px;
 }
 
 .banner {
     color: #E4BD1F;
+    /* color: black; */
     font-family: Montserrat;
 }
 
+.navbar-fixed {
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1020;
+}
+
+.side-pane {
+    position: fixed;
+    top: 0;
+    right: -270px;
+    width: 250px;
+    height: 100%;
+    background-color: #343a40;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: right 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    z-index: 1030;
+}
+
+.side-pane.open {
+    right: 0;
+}
 
 /* Positioning + styling for menu button + icon */
 .drawer-button-custom {
@@ -33,8 +71,12 @@ html, body {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .drawer-button-custom {
         margin-right: 20px; 
+    }
+
+    .nav-object-wrapper {
+        padding-bottom: 60px;
     }
 }

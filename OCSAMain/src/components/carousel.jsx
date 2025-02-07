@@ -1,31 +1,31 @@
 import React, { useState, useEffect } from "react";
-import carouselItems from "../assets/carouselItems";
 
 function Carousel(props) {
+    const items = props.items;
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const getNextItem = () => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % carouselItems.length);
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % items.length);
     };
 
     const getLastItem = () => {
-        setCurrentIndex((prevIndex) => prevIndex === 0 ? carouselItems.length - 1 : prevIndex + 1);
+        setCurrentIndex((prevIndex) => prevIndex === 0 ? items.length - 1 : prevIndex - 1);
     };
 
     useEffect(() => {
         const interval = setInterval(() => {
             getNextItem();
-        },3000);
+        },4000);
 
         return () => clearInterval(interval)
-    }, [currentIndex]); {/* Reset interval count everytime the current one changes */}
+    }, [currentIndex]);
 
     return (
         <div className="carousel-top-level">
             <div className="carousel-container w-75">
-                <img src="https://placehold.co/600x400"/>
-                <h1 className="carousel-header"> Hello World </h1>
-                <p className="carousel-description"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat illo mollitia consequatur inventore hic exercitationem eos culpa ut possimus debitis.</p>
+                <img src={items[currentIndex].image}/>
+                <h1 className="carousel-header"> {items[currentIndex].title} </h1>
+                <p className="carousel-description"> {items[currentIndex].desc} </p>
                 <button className="carousel-button next-button" onClick={getNextItem}>
                     <i class="bi bi-caret-right-fill"></i>
                 </button>

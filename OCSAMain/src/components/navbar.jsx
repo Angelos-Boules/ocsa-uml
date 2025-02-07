@@ -7,18 +7,17 @@ function Navbar() {
     const toggleMenu = () => setIsOpen(!isOpen);
     
     // Snap navbar to fixed top once it reaches the top by scrolling
-    const handleScroll = () => {
-        const navbar = document.querySelector('.nav-wrapper-custom');
-
-        if (window.scrollY > navbar.getBoundingClientRect().height) {
-            setIsFixed(true);
-        } else {
-            setIsFixed(false);
-        }
-    };
-
-    // Add event listener to the scroll when re-rendering and call handle scroll
     useEffect(() => {
+        const handleScroll = () => {
+            const navbar = document.querySelector('.nav-wrapper-custom');
+    
+            if (window.scrollY >= navbar.getBoundingClientRect().height) {
+                setIsFixed(true);
+            } else {
+                setIsFixed(false);
+            }
+        };
+
         window.addEventListener("scroll", handleScroll);
         return () => {
             window.removeEventListener("scroll", handleScroll);

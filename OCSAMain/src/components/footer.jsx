@@ -11,8 +11,9 @@ function Footer() {
                 </div>
 
                 <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
-                    <li className="ms-3"><a className="text-body-secondary" href="https://www.instagram.com/ocsa_uml?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
-                        Contact us <i className="bi bi-instagram"></i>
+                    <li className="ms-3"><a className="text-body-secondary" 
+                        href="https://www.instagram.com/ocsa_uml?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                        Connect with Us <i className="bi bi-instagram"></i>
                     </a></li>
                 </ul>
             </footer>

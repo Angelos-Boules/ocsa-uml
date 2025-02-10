@@ -6,6 +6,21 @@ html, body {
     overflow-x: hidden;
 }
 
+.card {
+    position: relative;
+    height: 20rem;
+    align-items: center;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.profile-img {
+    margin-top: 10px;
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    object-fit: cover;
+}
+
 /* Footer styling */
 .nav .text-body-secondary {
     text-decoration: none;
@@ -13,12 +28,10 @@ html, body {
 
 .nav .text-body-secondary:hover, .nav .text-body-secondary:active {
     color: rgb(14, 14, 44) !important;
-    text-decoration: underline;
 }
 
 /* Carousel styling */
 .carousel-top-level {
-    margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -148,6 +161,6 @@ html, body {
     }
 
     .nav-object-wrapper {
-        padding-bottom: 60px;
+        padding-bottom: 3rem;
     }
 }

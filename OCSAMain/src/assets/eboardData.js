@@ -2,8 +2,8 @@ const EBoardMembers = [
     {
         name: "Youssef Geris",
         role: "President",
-        image: "../vader.png",
-        major: "Exercise Science Pre-PA [Senior]",
+        image: "../bossnass.png",
+        major: "Exercise Science Pre-PT",
         year: "Senior"
     }, 
     {
@@ -18,7 +18,7 @@ const EBoardMembers = [
         name: "Sarah Michael",
         role: "Treasurer",
         image: "../ahsoka.png",
-        major: "Nutrition Pre-Dental",
+        major: "Nutritional Sciences Pre-Dental",
         minor: "Biology",
         year: "Junior"
     },
@@ -32,7 +32,7 @@ const EBoardMembers = [
     {
         name: "Thomas Azir",
         role: "Social Media Manager",
-        image: "../boba.png",
+        image: "../watto.jpg",
         major: "Mechanical Engineering",
         year: "Junior"
     }

@@ -6,6 +6,73 @@ html, body {
     overflow-x: hidden;
 }
 
+/* Accordion styling */
+.accordion {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.accordion-item {
+    position: relative;
+    border-bottom: 1px solid #ddd;
+}
+
+.accord-arrow {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+
+.accordion-header {
+    background-color: #f1f1f1;
+    color: black;
+    padding: 10px;
+    text-align: left;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+.accordion-body {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+}
+
+/* Faith section styling */
+.faith-section {
+    padding: 5px;
+}
+
+.faith-section-header {
+    font-family: Montserrat;
+    color: #937707
+}
+
+.faith-section-header::after {
+    content: " Ephesians 4:5";
+    font-size: 0.8rem;
+}
+
+.faith-section-text {
+    font-family: "Noto Serif";
+}
+
+.verse {
+    font-family: Montserrat;
+    font-style: italic;
+    text-align: center;
+}
+
+.verse-separator {
+    width: 50%;
+    transform: translateX(50%);
+}
+
+/* Eboard syling */
+
+
 .card {
     position: relative;
     height: 20rem;

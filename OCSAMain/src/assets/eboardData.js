@@ -8,7 +8,7 @@ const EBoardMembers = [
     }, 
     {
         name: "Angelos Boules",
-        role: "Vice President",
+        role: "Vice President & Website Developer",
         image: "../angelos.jpeg",
         major: "Computer Science",
         minor: "Mathematics",
